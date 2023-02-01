@@ -3,6 +3,7 @@ import ClickMe from "./components/ClickMe";
 import DarkMode from "./components/DarkMode";
 import FirstTodo from "./components/FirstTodo";
 import Happy from "./components/Happy";
+import SecondTodo from "./components/SecondTodo";
 import Water from "./components/Water";
 const App = () => {
   return (
@@ -26,6 +27,10 @@ const App = () => {
       <br />
       <br />
       <FirstTodo />
+      <br />
+      <br />
+      <br />
+      <SecondTodo />
     </div>
   );
 };
