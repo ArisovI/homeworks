@@ -1,36 +1,26 @@
 import React from "react";
-import ClickMe from "./components/ClickMe";
-import DarkMode from "./components/DarkMode";
-import FirstTodo from "./components/FirstTodo";
-import Happy from "./components/Happy";
-import SecondTodo from "./components/SecondTodo";
-import Water from "./components/Water";
+import Add from "./components/Add";
+import Click from "./components/Click";
+import Colors from "./components/Colors";
+import Mouse from "./components/Mouse";
+import Photos from "./components/Photos";
+import Reset from "./components/Reset";
+import Scroll from "./components/Scroll";
+import Time from "./components/Time";
+import Toggle from "./components/Toggle";
+import "./style.scss";
 const App = () => {
   return (
     <div>
-      <br />
-      <DarkMode />
-      <br />
-      <br />
-      <br />
-      <ClickMe />
-      <br />
-      <br />
-      <br />
-      <Water />
-      <br />
-      <br />
-      <br />
-      <Happy />
-
-      <br />
-      <br />
-      <br />
-      <FirstTodo />
-      <br />
-      <br />
-      <br />
-      <SecondTodo />
+      <Reset />
+      <Add />
+      <Colors />
+      <Click />
+      <Mouse />
+      <Time />
+      <Scroll />
+      <Toggle />
+      <Photos />
     </div>
   );
 };
