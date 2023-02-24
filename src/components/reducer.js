@@ -25,6 +25,7 @@ export default function (state, action) {
         }
         return element;
       });
+
     case "reset":
       return state.map((element) => {
         if (element.completed == false) {
@@ -33,6 +34,26 @@ export default function (state, action) {
         }
         return element;
       });
+
+    case "addSettings":
+      return {
+        cars: {
+          ...state.cars,
+          price: [+[...state.cars.price] + +action.payload.price],
+          ...state.cars.features.push(action.payload),
+        },
+        features: [...state.features.filter((el) => el != action.payload)],
+      };
+
+    case "delSettings":
+      return {
+        cars: {
+          ...state.cars,
+          price: [[...state.cars.price] - action.payload.price],
+          features: state.cars.features.filter((el) => el != action.payload),
+        },
+        features: [...state.features, action.payload],
+      };
     default:
       return state;
   }
